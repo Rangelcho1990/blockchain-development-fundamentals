@@ -80,7 +80,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Calculator.sol": "Calculator"
+			"Calculator.sol": "CompoundInterest"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -95,11 +95,11 @@
 	},
 	"sources": {
 		"Calculator.sol": {
-			"keccak256": "0xe3d5ab150581f085c9f30198704f079d4702c4fe007e7e30e7530ff8d84c56b4",
+			"keccak256": "0x2a4fe695c3fb21e97344c238eb55343240b2baf0205bce1bb4b7b6b22c45b535",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f22c3ffd6db3114a664bd1f4c9e928d862a7d9218824b5644311cf70edbe0a10",
-				"dweb:/ipfs/QmQK7ZvL8YwPtsW3nBMLkz576eWJDyEi1vtjxdv1VtBY1V"
+				"bzz-raw://2a292c4aab8a833f5a0b06ac2f88b50040e618092a0e0d2c5139b34599624796",
+				"dweb:/ipfs/QmQyMZTcqkrfXjA1kBbnp3aKPDskyfBPJR2rPkTJFLEkUU"
 			]
 		}
 	},
