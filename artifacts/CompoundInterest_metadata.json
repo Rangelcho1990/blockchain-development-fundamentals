@@ -80,7 +80,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Calculator.sol": "CompoundInterest"
+			"CompoundInterest.sol": "CompoundInterest"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -94,7 +94,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"Calculator.sol": {
+		"CompoundInterest.sol": {
 			"keccak256": "0x2a4fe695c3fb21e97344c238eb55343240b2baf0205bce1bb4b7b6b22c45b535",
 			"license": "MIT",
 			"urls": [
