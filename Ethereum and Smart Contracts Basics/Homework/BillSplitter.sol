@@ -7,5 +7,7 @@ contract BillSpitter {
         require(totalAmount > 0, "Total amount should be positive number");
         require(numPeople > 0, "Number of People should be positive number");
         require(numPeople < totalAmount, "Number of People can not be bigger than Total amaount.");
+
+        return totalAmount / numPeople;
     }
 }
