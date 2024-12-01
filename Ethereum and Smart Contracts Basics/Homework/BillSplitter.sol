@@ -6,8 +6,10 @@ contract BillSpitter {
     function splitExpense(uint256 totalAmount, uint256 numPeople) external pure returns (uint256 personShare) {
         require(totalAmount > 0, "Total amount should be positive number");
         require(numPeople > 0, "Number of People should be positive number");
-        require(numPeople < totalAmount, "Number of People can not be bigger than Total amaount.");
 
-        return totalAmount / numPeople;
+        personShare = totalAmount / numPeople;
+        if (personShare == 0) {
+            revert('The total amount cannot be divided among the number of people.');
+        }
     }
 }
