@@ -37,6 +37,8 @@ contract Test2 {
 
     Dog public bark;
 
+    string public stringOne = 'Hello world!';
+
     function checkRes() external view returns (uint256 x) {
         uint256[] memory arrRef = arr;
         arrRef[0] = 2;
@@ -76,10 +78,16 @@ contract Test2 {
     }
 
     function mapTest() external view  {
-        mapping (uint256 => uint256) storage mapOne = map;
+        // mapping (uint256 => uint256) storage mapOne = map;
     }
 
     function structTest() external view  {
-        Dog memory barkCloning = bark; // same as array
+        // Dog memory barkCloning = bark; // same as array
+    }
+
+    function testString() external pure returns (string memory) {
+        string memory hello = "Hello world!"; // same as array
+
+        return (hello);
     }
 }

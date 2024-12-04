@@ -11,19 +11,16 @@ struct Vote{
 contract Crowdfunding {
     mapping(address => uint256) public shares;
     Vote[] public votes;
+    uint256 public sharePrice;
+    uint256 public totalShares;
 
-    uint256 public sharePrice = 1 ether;
-
-    uint256 public hours5 = 5 hours;
-    uint256 public min = 5 minutes;
-    uint256 public sec = 5 seconds;
-
-    // constructor(uint256 _initSharePrice){
-    //     sharePrice = _initSharePrice;
-    // }
+    constructor(uint256 _initSharePrice){
+        sharePrice = _initSharePrice; // set initial share price
+    }
 
     function addShares() external payable {
-        // shares[receiver] += 100;
+        totalShares = msg.value;
+
         // shares[msg.sender] += 1000; // we know who calls the method, cannot be manipuleted
         shares[msg.sender] += msg.value; // works with payble
     }
@@ -37,4 +34,8 @@ contract Crowdfunding {
             })
         );
     }
+
+    // function getUserShares(address user) external view returns (uint) {
+    //     return shares[user];
+    // }
 }
