@@ -1,5 +1,6 @@
 /.states
 /.git
+/.deps
 
 /Solidity Fundamentals/Homework/artifacts/
 /Solidity Fundamentals/Lecture/artifacts/
@@ -10,3 +11,6 @@
 
 /Inheritance and Modularity/Homework/artifacts/
 /Inheritance and Modularity/Lecture/artifacts/
+
+/Smart Contracts Standards/Homework/artifacts/
+/Smart Contracts Standards/Lecture/artifacts/
