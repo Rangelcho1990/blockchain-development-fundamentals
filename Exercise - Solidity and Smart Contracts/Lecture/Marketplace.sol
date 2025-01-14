@@ -121,5 +121,5 @@ contract Marketplace {
         }
     }
 
-    // testing from lecture start at 1:34:50
+    // testing from lecture start at 1:34:50 
 }
